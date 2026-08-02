@@ -3,6 +3,16 @@ main = "src/index.ts"
 compatibility_date = "2024-01-01"
 preview_urls = true
 
+[observability]
+enabled = true
+
+[observability.logs]
+invocation_logs = true
+head_sampling_rate = 1
+
+[observability.traces]
+enabled = true
+
 [build]
 command = "npm run build"
 
